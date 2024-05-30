@@ -23,7 +23,7 @@ body{
     width: 384px;
     border-radius: 20px;
     background-color: map-get($colors,"white" );
-    padding: 20px;
+    padding: 15px;
     .blogImage{
         border-radius: 10px;
         margin-bottom: 20px
@@ -37,13 +37,13 @@ body{
             padding-left:7px ;
             padding-top: 7px;
             padding-bottom: 5px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         };
         .publishDate{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         };
         .title{
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
         div{
             border-style: solid;
@@ -55,7 +55,7 @@ body{
             p{
                 border-style: solid;
                 margin: 0;
-                
+
 
             }
         }

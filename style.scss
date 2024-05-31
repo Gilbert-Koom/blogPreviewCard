@@ -14,12 +14,20 @@ $fontFamily: "Figtree";
 body{
     background-color: map-get($colors, "yellow" );
     font-family: $fontFamily;
+    font-weight: 500;
 };
 
 .container{
+    position: absolute;
+    
+    
+    right: 0;
+    left: 0;
+    top: 100px;
+    margin: auto;
+    box-shadow: 5px 5px;
     display: flex;
     flex-direction: column;
-    border-style: solid;
     width: 384px;
     border-radius: 20px;
     background-color: map-get($colors,"white" );
@@ -29,7 +37,7 @@ body{
         margin-bottom: 20px
     };
     .content{
-        border-style: solid;
+        
         .category{
             background-color: map-get($colors,"yellow" );
             width: 82px;
@@ -38,23 +46,27 @@ body{
             padding-top: 7px;
             padding-bottom: 5px;
             margin-bottom: 5px;
+            border-radius: 4px;
+            font-weight: 700;
         };
         .publishDate{
             margin-bottom: 15px;
+            color: map-get($colors, "black" )
         };
         .title{
             margin-bottom: 20px;
+            font-weight: 900;
+
         }
         div{
-            border-style: solid;
+            
         };
         .description{
-            border-style: dotted;
             padding: 0;
             margin: 0;
             p{
-                border-style: solid;
                 margin: 0;
+                color: map-get($colors, "grey" )
 
 
             }
@@ -64,15 +76,20 @@ body{
     };
     .author{
         display: flex;
-        border-style: solid;
         align-items: center;
         img{
-            border-style: solid;
+            
             width: 32px;
             height: 32px;
         };
-        p{border-style: solid;}
+        p{font-weight: bold;margin-left: 20px;}
 
+    }
+}
+.container:hover{
+    box-shadow: 10px 10px;
+    .title{
+        color: yellow;
     }
 }
 
